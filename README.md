@@ -8,7 +8,7 @@ Stack: Next.js (App Router) · React · TypeScript · CSS Modules.
 
 ```bash
 npm install
-cp .env.example .env.local   # ajuste URL do site e WhatsApp
+cp .env.example .env.local   
 npm run dev                  # http://localhost:3000
 npm run build && npm start   # produção
 ```
@@ -35,3 +35,9 @@ Esta versão mostra o **fluxo completo**, mas os pedidos ficam no `localStorage`
 | Página do evento + RSVP | Funciona no mesmo navegador | Banco de dados (ex.: Postgres/Supabase) |
 | Entrega por WhatsApp/e-mail | Link `wa.me` pronto | E-mail transacional e/ou API oficial do WhatsApp |
 | Painel administrativo | Sem login | Autenticação + cadastro/edição de modelos |
+
+## Site feito para fins de construção de portfólio
+
+- [Site](https://loja-convites.vercel.app/)
+- [LinkedIn](https://www.linkedin.com/in/leonardo-pacheco-vitorino-01b0052a2/?isSelfProfile=true)
+- [99freelas](https://www.99freelas.com.br/user/LeoVit)
