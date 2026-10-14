@@ -1,0 +1,148 @@
+.demo {
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: rgba(255, 204, 77, 0.1);
+  color: var(--alerta);
+  font-size: 0.9rem;
+}
+
+.resumo {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.resumo li {
+  padding: 14px 16px;
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  background: var(--grafite);
+  color: var(--texto-suave);
+}
+
+.numero {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--texto);
+}
+
+.abas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.aba {
+  min-height: 44px;
+  padding: 8px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--borda);
+  background: var(--grafite);
+  color: var(--texto);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ativa {
+  background: var(--rosa);
+  border-color: var(--rosa);
+}
+
+.atualizar {
+  margin-left: auto;
+  min-height: 44px !important;
+  padding: 8px 18px !important;
+}
+
+.pedidos,
+.modelos {
+  display: grid;
+  gap: 16px;
+}
+
+.pedido {
+  padding: 18px;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  background: var(--grafite);
+}
+
+.topo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.aguardando_pagamento {
+  background: rgba(255, 204, 77, 0.15);
+  color: var(--alerta);
+}
+
+.pago,
+.video_pronto {
+  background: rgba(255, 45, 149, 0.15);
+  color: var(--rosa-claro);
+}
+
+.liberado {
+  background: rgba(61, 220, 151, 0.15);
+  color: var(--sucesso);
+}
+
+.linha {
+  margin: 0 0 4px;
+  color: var(--texto-suave);
+  font-size: 0.92rem;
+  overflow-wrap: anywhere;
+}
+
+.acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.dica {
+  margin: 12px 0 0;
+  font-size: 0.82rem;
+  color: var(--texto-suave);
+}
+
+.modelo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  background: var(--grafite);
+}
+
+.emoji {
+  font-size: 1.6rem;
+}
+
+.nomeModelo {
+  flex: 1;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .resumo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

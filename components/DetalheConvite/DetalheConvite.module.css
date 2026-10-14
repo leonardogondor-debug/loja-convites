@@ -1,0 +1,43 @@
+.grade {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+}
+
+.categoria {
+  margin-bottom: 4px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--rosa-claro);
+}
+
+.preco {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.descricao {
+  color: var(--texto-suave);
+  font-size: 1.05rem;
+}
+
+.beneficios {
+  display: grid;
+  gap: 8px;
+  margin: 20px 0 28px;
+}
+
+.beneficios li {
+  padding: 12px 14px;
+  background: var(--grafite);
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+  .grade {
+    grid-template-columns: 1fr 1fr;
+  }
+}

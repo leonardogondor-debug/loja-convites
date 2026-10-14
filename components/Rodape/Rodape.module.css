@@ -1,0 +1,56 @@
+.rodape {
+  margin-top: 64px;
+  padding: 40px 0 24px;
+  background: var(--grafite);
+  border-top: 2px solid var(--rosa);
+}
+
+.grade {
+  display: grid;
+  gap: 32px;
+}
+
+.marca {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--rosa-claro);
+  margin-bottom: 8px;
+}
+
+.texto {
+  color: var(--texto-suave);
+  max-width: 36ch;
+}
+
+.titulo {
+  font-size: 1rem;
+  color: var(--texto);
+  margin-bottom: 12px;
+}
+
+.lista {
+  display: grid;
+  gap: 8px;
+}
+
+.link {
+  color: var(--texto-suave);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--rosa-claro);
+}
+
+.copy {
+  margin: 32px 0 0;
+  text-align: center;
+  color: var(--texto-suave);
+  font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+  .grade {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}

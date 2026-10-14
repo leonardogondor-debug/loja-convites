@@ -1,0 +1,38 @@
+.cabecalho {
+  padding: 32px 0 24px;
+}
+
+.trilha {
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
+
+.lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.item {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.link {
+  color: var(--rosa-claro);
+}
+
+.titulo {
+  font-size: clamp(1.7rem, 4.5vw, 2.4rem);
+  margin-bottom: 8px;
+}
+
+.descricao {
+  max-width: 62ch;
+  color: var(--texto-suave);
+  margin: 0;
+}

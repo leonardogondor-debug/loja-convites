@@ -1,0 +1,65 @@
+.secao {
+  padding: 64px 0 0;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 32px;
+}
+
+.lista {
+  display: grid;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.item {
+  position: relative;
+  padding: 24px 20px;
+  background: var(--grafite);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  text-align: center;
+}
+
+.numero {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--rosa);
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icone {
+  display: block;
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.subtitulo {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.texto {
+  margin: 0;
+  color: var(--texto-suave);
+}
+
+@media (min-width: 768px) {
+  .lista {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

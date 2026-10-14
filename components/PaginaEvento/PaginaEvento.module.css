@@ -1,0 +1,81 @@
+.grade {
+  display: grid;
+  gap: 32px;
+  align-items: start;
+}
+
+.painel,
+.aviso {
+  padding: 24px;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  background: var(--grafite);
+}
+
+.painel h2,
+.aviso h2 {
+  font-size: 1.3rem;
+}
+
+.formulario {
+  display: grid;
+  gap: 16px;
+}
+
+.opcoes {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.legenda {
+  padding: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.opcao {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 10px 14px;
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  background: var(--grafite-2);
+  cursor: pointer;
+}
+
+.opcao input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--rosa);
+}
+
+.erro {
+  margin: 0;
+  color: var(--erro);
+}
+
+.sucesso {
+  padding: 14px;
+  border-radius: 10px;
+  background: rgba(61, 220, 151, 0.12);
+  color: var(--sucesso);
+  font-weight: 700;
+}
+
+.contagem {
+  margin: 20px 0 0;
+  color: var(--texto-suave);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .grade {
+    grid-template-columns: 1fr 1fr;
+  }
+}

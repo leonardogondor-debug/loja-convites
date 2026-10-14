@@ -1,0 +1,51 @@
+.grade {
+  display: grid;
+  gap: 32px;
+}
+
+.formulario {
+  display: grid;
+  gap: 24px;
+}
+
+.grupo {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 20px;
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  background: var(--grafite-2);
+}
+
+.legenda {
+  padding: 0 8px;
+  font-weight: 800;
+  color: var(--rosa-claro);
+}
+
+.previa {
+  align-self: start;
+}
+
+.tituloPrevia {
+  font-size: 1.2rem;
+}
+
+.nota {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+}
+
+@media (min-width: 900px) {
+  .grade {
+    grid-template-columns: 1.3fr 1fr;
+  }
+
+  .previa {
+    position: sticky;
+    top: 88px;
+  }
+}
